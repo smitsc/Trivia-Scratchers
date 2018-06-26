@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Trivia Scratcher</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=755">
+<meta name="format-detection" content="telephone=no">
+
+<!-- jQuery library -->
+<script src="js/jquery.js" type="text/javascript"></script>
+
+<!-- CSS and scripts -->
+<!--<link href="styles/scratcherMain.css" rel="stylesheet" type="text/css"/>-->
+<link href="styles/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="styles/style.css" rel="stylesheet" type="text/css"/>		
+<!--<link href="styles/narrow-jumbotron.css" rel="stylesheet" type="text/css"/>-->
+
+<!-- Scripts -->
+<script src="js/scratcher2.js" type="text/javascript"></script>
+<script src="js/scratcherMain.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+<!-- Change Manually:
+	data-words: copy new question here, no comma's
+	title(X) class based on question length: (use Notepad++ chk length in status bar)
+	< 30 = title4
+	31 > 70 = title3
+	71 > 110 = title2
+	> 111 = title1
+-->    
+    
+<div class="container shadow1light" id="scratcher-box-panel">
+     
+      <div class="row">
+          <div id="logo-wrapper" class="section-area">
+               <img class="DQTLogoSize" src="images/DQTlogo-lite.png" size="200%">
+          </div>
+          
+          <div id="scratcher-wrapper" class="section-area">
+               <div class="typer-box">		
+                  <p>
+                      <span class="typer title2" id="second-id" data-words="Marco Polo the first to leave a detailed account from Asia was born in what European city?" data-colors="black,red" data-delay="60"></span>
+                      <span class="cursor" data-cursorDisplay="|" data-owner="second-id" data-questionNumber="26"></span>
+                  </p>	
+              </div>  		
+          </div>
+          
+        <div id="start-game-trivia-wrapper" class="section-area">
+			<div class="col-lg-6 col-md-4 col-sm-2">
+				<canvas id="scratcher1" class="image-canvas shadow1light" width="200" height="104"></canvas>
+				<canvas id="scratcher3" class="image-canvas shadow1light" width="200" height="104"></canvas>
+			</div>
+			<div class="col-lg-6 col-md-4 col-sm-2">
+				<canvas id="scratcher2" class="image-canvas shadow1light" width="200" height="104"></canvas>
+				<canvas id="scratcher4" class="image-canvas shadow1light" width="200" height="104"></canvas>
+			</div>
+        </div>
+          
+          <div id="game-gift-wrapper" class="section-area">
+              
+              <div class="row action-section">
+                <div class="col-lg-5">
+                    <div class="timer-area">
+                        <h1 id="timer">00.00</h1>
+        <!--                <h1 id="timer"><time>00:00:00</time></h1>-->
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                  <div id="scratcher3Pct" class="scratcher-margin-bottom">0%</div>
+                </div>
+                <div class="col-lg-5">
+                    <form action="../Scratcher-login.php" method="post">
+                      <input type="hidden" id="score" name="score">
+                      <input type="hidden" id="number" name="number">			  
+                      <input id="btn-save-score" class="save-score" disabled type="submit" value="Save Score">
+                    </form>
+<!--                    <button type="button" onclick="onRemoveEvent()">TEST</button>-->
+                </div>
+            </div>
+          </div>
+          <div class="row">
+               <div class="col-lg-12">
+                  <span id="deduct-message">10 second wrong answer deduction</span>
+                </div>
+          </div>
+
+      </div>
+
+</div> <!-- /container -->
+    
+  <script src="js/typer.js"></script>
+  <script src="js/trivia-scratcher.js"></script>  
+  
+</body>
+
+</html>

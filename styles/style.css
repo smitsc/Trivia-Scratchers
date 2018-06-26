@@ -1,0 +1,408 @@
+
+html {
+    height: 100%;
+}
+
+body {
+	margin-top: 50px;
+	font-family: 'proxima-nova', 'Raleway', Helvetica, sans-serif;
+	font-size: 16px;
+	background: url('../images/Sample_sky.jpg') no-repeat #97d6e7;
+	background-size: cover;
+/*    height: 100%;*/
+}
+.DQTLogoSize {
+	width: 80%;
+    height: auto;
+}
+
+.homepage-link {
+    color: #87cdde !important;
+}
+
+.homepage-link:hover {
+    color: #45b2cc !important;
+    text-decoration: none;
+}
+ 
+.ButtonSize {
+	width: 40%;
+    height: auto;
+}
+
+.title4{
+	font-size: 2.6em;
+}
+
+.title3{
+	font-size: 2.2em;
+}
+
+.title2{
+	font-size: 1.8em;
+}
+
+.title1{
+	font-size: 1.4em;
+}
+
+.wrap{
+	max-width: 600px;
+	margin:50px auto;
+}
+
+.type-wrap{
+	margin:10px auto;
+	padding:20px;
+	background:#f0f0f0;
+	border-radius:5px;
+	border:#CCC 1px solid;
+    min-height: 266px;
+}
+
+.typer-box{
+	margin:10px auto;
+	padding:20px;
+	background:#f0f0f0;
+	border-radius:5px;
+    min-height: 240px;
+    border: 6px solid #46b3cc;
+}
+
+#btn-save-score {
+/*
+    background: #88cdde;
+    border: 6px solid #46b3cc;
+    border-radius: 12px;
+    width: 90%;
+    padding: 5px;
+    color: #000;
+    font-weight: 800;
+    font-size: 20px;
+*/
+    background: #a1bbc1;
+    border: 6px solid #909da0;
+    border-radius: 12px;
+    width: 100%;
+    padding: 5px;
+    color: #6d6c6c;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.timer-area h1 {
+    margin: 0;
+}
+
+.timer-area {
+    background: #FFF;
+    border: 6px solid #46b3cc;
+    border-radius: 12px;
+    width: 100%;
+    float: left;
+}
+
+.action-section {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#scratcher-box-panel {
+    background: #666; 
+	border-radius: 20px;
+    border: 5px solid white;
+    padding: 22px; 
+    background: url(../images/GreyBalls2.png);   
+    padding-bottom: 10px;
+}
+
+#deduct-message {
+	background-color: #fff;
+    color: #ff3636;
+    display: block;
+    font-size: 20px;
+    display: none;
+    text-align: center;
+}
+
+#scratcher1,
+#scratcher2,
+#scratcher3,
+#scratcher4 {
+    display: none;
+}
+
+#start-game-trivia-wrapper {
+    min-height: 223px;
+}
+
+.btn-start-game-trivia {
+    background: #88cdde;
+    border: 6px solid #46b3cc;
+    border-radius: 12px;
+    width: 90%;
+    padding: 5px;
+    color: #000;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.section-area {
+    text-align: center;
+    margin: 12px 0px;
+}
+
+#game-gift-wrapper h3 {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#rules-wrapper p {
+    color: #FFF;
+    font-size: 10px;
+	margin: 5px 20px 5px 20px;
+}
+
+#game-gift-wrapper {
+    padding: 10px;
+}
+
+#scratcher-wrapper {
+    padding: 6px;
+}
+
+.game-link-btn {
+    background: url(../images/start-game-off.png) no-repeat;
+    width: 200px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    background-size: 200px;
+}
+
+.game-link-btn:hover {
+   background: url(../images/start-game-on.png) no-repeat; 
+    width: 200px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    background-size: 200px;
+}
+
+
+/* === TRIVIA SCRATCHER === */
+.triviaScratcher {
+	background: url('../images/WhtBalls.png') repeat-y;
+	background-size: cover;
+}
+
+#scratcher-box {
+	text-align: center;
+	border: 1px solid black;
+	margin-bottom: 15px;
+	background: url('../images/WhtBalls.png') repeat-y;
+	background-size: cover;	
+}
+
+.scratcher-bottom-margin {
+	margin-bottom: 20px;
+}
+
+#text-area {
+	margin: 15px 0;
+}
+
+#bottom-text-area {
+	margin: 15px 0;
+	font-size: 85%;
+}
+
+#scratcher-box canvas {
+	border: 1px solid gray;
+/*	margin: 0 10px 0px 10px;*/
+	cursor: crosshair;
+	cursor: url(../images/cursor.png) 15 15, crosshair;
+}
+
+.image-canvas  {
+	border: 1px solid gray;
+/*	margin: 0 10px 0px 10px;*/
+	cursor: crosshair;
+	cursor: url(../images/cursor.png) 15 15, crosshair;
+}
+
+#scratcher3Pct {
+    font-weight: 700;
+    padding: 15px 4px;
+    color: #FFF
+}
+
+#scratcher-box-panel #game-gift-wrapper {
+    clear: both;
+    margin-bottom: 0;
+}
+
+.container {
+    max-width: 47rem;
+    margin : auto !important;
+}
+
+#start-game-trivia-wrapper div {
+    padding: 0;
+}
+
+/*MOBILE*/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    #scratcher-box-panel,
+    #scratcher-box{
+        margin: 26px;
+        margin-top: 10%;
+    }
+ 
+    #logo-wrapper img{
+        width: 100%;  
+    }
+    
+    #scratcher-wrapper img {
+        width: 70%;  
+    } 
+    
+    #start-game-trivia-wrapper img {
+        width: 50%;  
+    } 
+    
+    #game-gift-wrapper h3 {
+        font-size: 50px;
+    }
+    
+    #game-gift-wrapper {
+        padding: 50px;
+    }
+    
+    .section-area {
+        margin: 48px 18px;
+    }
+    
+/*    ADDED*/
+    .game-link-btn {
+        height: 230px;
+        width: 330px;
+        background-size: 330px;
+    }
+    
+
+    #rules-wrapper p {
+        font-size: 26px;
+    }
+    
+    body {
+        padding-top: 0 !important;
+    }
+    
+    .section-area {
+        margin: 24px 18px;
+    }
+    
+    #game-gift-wrapper {
+        padding: 10px;
+    }
+    
+/*    ADDED*/
+
+
+/*    GAME*/
+    .timer-area {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    #btn-save-score {
+        width: 70%;
+        margin: 30px 0;
+        padding: 20px;
+    }
+    
+    
+    #scratcher-box canvas {
+        width: 50%;
+        padding: 10px;
+        float: left;
+    }
+    
+    
+    #scratcher1,
+    #scratcher2,
+    #scratcher3,
+    #scratcher4{
+        width: 50%;
+        float: left;
+        padding: 6px;
+    }
+    
+    #scratcher3Pct {
+        padding: 24px 4px;
+        font-size: 30px;
+    }
+    
+    .timer-area {
+        padding: 16px;
+        margin: 0px;
+    }
+    
+    #btn-save-score {
+        width: 100%;
+        font-size: 30px;
+    }
+    
+    .typer-box {
+        font-size: 26px;
+        min-height: 350px;
+    }
+    
+    .container {
+        max-width: 93%;
+    }
+}
+
+
+/*TABLET*/
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .container {
+        max-width: 47rem;
+        margin : auto !important;
+    }
+    
+    .game-link-btn {
+        height: 120px;
+        width: 210px;
+        background-size: 210px;
+    }
+    
+    #game-gift-wrapper {
+         padding: 0; 
+    }
+    
+    #rules-wrapper p {
+        font-size: 13px;
+    }
+    
+    #game-gift-wrapper h3 {
+        font-size: 38px;
+    }
+    
+    .section-area {
+        margin: 34px 18px;
+    }
+    
+    #scratcher3Pct {
+        clear: both;
+    }
+}
+
