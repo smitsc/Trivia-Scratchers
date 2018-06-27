@@ -1,6 +1,4 @@
-![What are Trivia Scratchers](https://raw.githubusercontent.com/smitsc/Trivia-Scratchers/images/gitImage.png)
-
-https://github.com/smitsc/Trivia-Scratchers/images/gitImage.png
+![What are Trivia Scratchers](images/gitImage.png)
 
 # On-Boarding Game - Trivia Scratchers
 
